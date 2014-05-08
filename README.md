@@ -1,4 +1,4 @@
-unitedagency.github.io
+United Agency Website
 ======================
 
-Public pages for announcements on our development
+(c) Copyrights 2014 – United Agency
