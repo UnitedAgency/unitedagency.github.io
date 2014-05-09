@@ -25,9 +25,10 @@ module.exports = function(grunt) {
 		},
 
 		uglify: {
-			build: {
-				src: '_js/main.js',
-				dest: 'js/main.min.js'
+			my_target: {
+				files: {
+					'js/main.min.js' : ['_js/main.js']
+				}
 			},
 			options: {
 				preserveComments: 'some'
