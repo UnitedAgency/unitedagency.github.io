@@ -14,14 +14,14 @@ module.exports = function(grunt) {
 		},
 
 		sass: {
-			dev: {
-				options: {
-					style: 'expanded'
-				},
-				files: {
-					'css/main.css':'_sass/main.scss'
-				}
-			},
+			// dev: {
+			// 	options: {
+			// 		style: 'expanded'
+			// 	},
+			// 	files: {
+			// 		'css/main.css':'_sass/main.scss'
+			// 	}
+			// },
 			dist: {
 				options: {
 					style: 'compressed'

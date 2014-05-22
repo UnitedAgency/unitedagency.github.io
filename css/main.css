@@ -3987,6 +3987,7 @@ input[type="button"].btn-block {
 .ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3 {
   margin-top: 5%;
   font-weight: 500;
+  color: #062430;
 }
 .ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3:before {
   content: " ";
@@ -4003,19 +4004,19 @@ input[type="button"].btn-block {
   background-position: 0 0;
 }
 .ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3.development-content:before {
-  background-position: 0 0;
+  background-position: -105px 0;
 }
 .ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3.advocacy:before {
-  background-position: 0 0;
+  background-position: -210px 0;
 }
 .ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3.partnerships:before {
   background-position: 0 0;
 }
 .ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3.digital-advertising:before {
-  background-position: 0 0;
+  background-position: -105px -105px;
 }
 .ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3.listening-analytics-reporting:before {
-  background-position: 0 0;
+  background-position: -210px -105px;
 }
 .ua-services .ua-section-expertise .ua-expertise-row .ua-expertise p {
   font-size: 16px;
