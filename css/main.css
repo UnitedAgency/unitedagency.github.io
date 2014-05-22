@@ -3803,8 +3803,6 @@ input[type="button"].btn-block {
 }
 
 .ua-section {
-  height: 800px;
-  min-height: 800px;
   color: white;
   background-color: #646464;
   background-repeat: no-repeat;
@@ -3963,4 +3961,82 @@ input[type="button"].btn-block {
   /* MSIE */
   filter: none;
   -webkit-filter: grayscale(0);
+}
+
+.ua-services .ua-section-heading {
+  background: #f1f1f1;
+  height: 100%;
+  min-height: 100%;
+}
+@media (min-width: 768px) {
+  .ua-services .ua-section-expertise .ua-expertise-row:first-child {
+    border-bottom: 2px solid #f1f1f1;
+  }
+}
+@media (min-width: 768px) {
+  .ua-services .ua-section-expertise .ua-expertise-row .ua-expertise {
+    border-right: 2px solid #f1f1f1;
+  }
+}
+@media (min-width: 992px) {
+  .ua-services .ua-section-expertise .ua-expertise-row .ua-expertise {
+    min-height: 440px;
+    overflow: hidden;
+  }
+}
+.ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3 {
+  margin-top: 5%;
+  font-weight: 500;
+}
+.ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3:before {
+  content: " ";
+  display: block;
+  width: 105px;
+  height: 105px;
+  background-image: url(../img/united-agency-expertises.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: relative;
+  margin: 10px auto;
+}
+.ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3.community-engagement:before {
+  background-position: 0 0;
+}
+.ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3.development-content:before {
+  background-position: 0 0;
+}
+.ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3.advocacy:before {
+  background-position: 0 0;
+}
+.ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3.partnerships:before {
+  background-position: 0 0;
+}
+.ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3.digital-advertising:before {
+  background-position: 0 0;
+}
+.ua-services .ua-section-expertise .ua-expertise-row .ua-expertise h3.listening-analytics-reporting:before {
+  background-position: 0 0;
+}
+.ua-services .ua-section-expertise .ua-expertise-row .ua-expertise p {
+  font-size: 16px;
+}
+.ua-services .ua-section-expertise .ua-expertise-row .ua-expertise:last-child {
+  border-right: none;
+}
+.ua-services .ua-section-join-us {
+  background-color: #ed3f4c;
+  color: white;
+}
+.ua-services .ua-section-join-us p {
+  margin-bottom: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.ua-services .ua-section-join-us p a {
+  color: white;
+}
+.ua-services .ua-section-join-us p a:hover, .ua-services .ua-section-join-us p a:focus, .ua-services .ua-section-join-us p a.hover {
+  color: #062430;
+  text-decoration: none;
+  border-bottom: 1px solid #062430;
 }
