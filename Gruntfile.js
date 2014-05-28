@@ -77,7 +77,12 @@ module.exports = function(grunt) {
 				}
 			},
 			jekyll: {
-				files: ['./_includes/*.html'],
+				files: [
+					'./_layouts/*.html',
+					'./_includes/*.html',
+					'./_posts/*.markdown',
+					'./index.html'
+				],
 				tasks: ['jekyll'],
 				options: {
 					spawn: false

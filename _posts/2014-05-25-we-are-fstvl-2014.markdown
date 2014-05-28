@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "WE ARE FSTVL"
+date:   2014-05-25 08:00:00
+categories: work
+client: We Are FSTVL
+excerpt: Facebook, iOS, Android Application & Digital Advertising
+background: ua-wearefstvl-background.jpg
+image: ua-wearefstvl-thumb.png
+logo: ua-wearefstvl-logo.png
+css: wearefstvl
+---

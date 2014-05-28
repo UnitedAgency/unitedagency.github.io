@@ -4069,6 +4069,12 @@ input[type="button"].btn-block {
 .ua-case .tc-usoa {
   background-image: url(../img/ua-usoa-background.jpg);
 }
+.ua-case .wearefstvl {
+  background-image: url(../img/ua-wearefstvl-background.jpg);
+}
+.ua-case .elite {
+  background-image: url(../img/ua-elite-background.jpg);
+}
 @media (min-width: 768px) {
   .ua-case .ua-work-thumb,
   .ua-case .ua-work-summary {
