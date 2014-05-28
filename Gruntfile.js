@@ -14,14 +14,14 @@ module.exports = function(grunt) {
 		},
 
 		sass: {
-			// dev: {
-			// 	options: {
-			// 		style: 'expanded'
-			// 	},
-			// 	files: {
-			// 		'css/main.css':'_sass/main.scss'
-			// 	}
-			// },
+			dev: {
+				options: {
+					style: 'expanded'
+				},
+				files: {
+					'css/main.css':'_sass/main.scss'
+				}
+			},
 			dist: {
 				options: {
 					style: 'compressed'
@@ -40,6 +40,14 @@ module.exports = function(grunt) {
 			},
 			options: {
 				preserveComments: 'some'
+			}
+		},
+
+		jekyll: {
+			build: {
+				options: {
+					serve: false
+				}
 			}
 		},
 
@@ -67,6 +75,13 @@ module.exports = function(grunt) {
 				options: {
 					spawn: false
 				}
+			},
+			jekyll: {
+				files: ['./_includes/*.html'],
+				tasks: ['jekyll'],
+				options: {
+					spawn: false
+				}
 			}
 		}
 		
@@ -75,7 +90,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['sass', 'uglify', 'watch']);
+	grunt.registerTask('default', ['sass', 'uglify', 'jekyll', 'watch']);
 }; 
