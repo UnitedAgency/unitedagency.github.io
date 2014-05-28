@@ -1,20 +1,40 @@
 <!-- Case Studies -->
-<div class="ua-case ua-section row clearfix">
+<div id="ua-case-studies" class="ua-case ua-section row clearfix carousel slide">
+	
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#ua-case-studies" data-slide-to="0" class="active"></li>
+		<li data-target="#ua-case-studies" data-slide-to="1"></li>
+		<li data-target="#ua-case-studies" data-slide-to="2"></li>
+	</ol>
+
+	<div class="carousel-inner">
 	{% for post in site.categories.work %}
-		<div class="ua-work-background {{ post.css }}">
-			<div class="col-sm-6 ua-work-thumb">
-				<img src="{{ site.url }}/img/{{ post.image }}" alt="" class="img-responsive">
-			</div>
-			<div class="col-sm-6 ua-work-summary">
-				<div class="ua-work-logo">
-					<img src="{{ site.url }}/img/{{ post.logo }}" alt="">
+		<div class="item{% if post.css == 'tc-usoa' %} active{% endif %}">
+			<div class="ua-work-background {{ post.css }}">
+				<div class="col-sm-6 ua-work-thumb">
+					<img src="{{ site.url }}/img/{{ post.image }}" alt="" class="img-responsive">
 				</div>
-				<div class="h1 ua-work-headline">{{ post.title }}</div>
-				<p class="ua-section-tagline">{{ post.excerpt }}</p>
-				<p class="ua-view-project">
-					<a href="{{ post.url }}">VIEW PROJECT</a>
-				</p>				
+				<div class="col-sm-6 ua-work-summary">
+					<div class="ua-work-logo">
+						<img src="{{ site.url }}/img/{{ post.logo }}" alt="">
+					</div>
+					<div class="h1 ua-work-headline">{{ post.title }}</div>
+					<p class="ua-section-tagline">{{ post.excerpt }}</p>
+					<p class="ua-view-project">
+						<a href="{{ post.url }}">VIEW PROJECT</a>
+					</p>				
+				</div>
 			</div>
 		</div>
 	{% endfor %}
+	</div>
+
+	<!-- Controls -->
+	<a class="left carousel-control" href="#ua-case-studies" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a class="right carousel-control" href="#ua-case-studies" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
 </div>

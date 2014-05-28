@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 		uglify: {
 			my_target: {
 				files: {
-					'js/main.min.js' : ['_js/main.js']
+					'js/main.min.js' : ['bower_components/jquery/dist/jquery.min.js', '_sass/bootstrap-sass/javascripts/bootstrap/carousel.js', '_js/main.js']
 				}
 			},
 			options: {
