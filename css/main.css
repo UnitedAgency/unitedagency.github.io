@@ -4243,18 +4243,18 @@ input[type="button"].btn-block {
   min-height: 400px;
 }
 .ua-case .carousel-control {
-  width: 5%;
   opacity: 1;
-  color: #ed3f4c;
+}
+@media (min-width: 768px) {
+  .ua-case .carousel-control {
+    width: 6%;
+  }
 }
 .ua-case .carousel-control:hover, .ua-case .carousel-control:focus, .ua-case .carousel-control.hover {
   opacity: 1;
 }
-.ua-case .carousel-indicators li {
-  border-color: #ed3f4c;
-}
-.ua-case .carousel-indicators .active {
-  background-color: #ed3f4c;
+.ua-case .carousel-control.left, .ua-case .carousel-control.right {
+  background: none;
 }
 .ua-case .ua-work-background {
   width: 100%;

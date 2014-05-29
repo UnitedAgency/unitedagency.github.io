@@ -35,7 +35,12 @@ module.exports = function(grunt) {
 		uglify: {
 			my_target: {
 				files: {
-					'js/main.min.js' : ['bower_components/jquery/dist/jquery.min.js', '_sass/bootstrap-sass/javascripts/bootstrap/carousel.js', '_js/main.js']
+					'js/main.min.js' : [
+						'bower_components/jquery/dist/jquery.min.js', 
+						'_sass/bootstrap-sass/javascripts/bootstrap/transition.js',
+						'_sass/bootstrap-sass/javascripts/bootstrap/carousel.js',
+						'_js/main.js'
+					]
 				}
 			},
 			options: {
@@ -47,6 +52,16 @@ module.exports = function(grunt) {
 			build: {
 				options: {
 					serve: false
+				}
+			},
+			dev: {
+				options: {
+					config: '_config.dev.yml'
+				}
+			},
+			prod: {
+				options: {
+					config: '_config.yml'
 				}
 			}
 		},
@@ -83,7 +98,7 @@ module.exports = function(grunt) {
 					'./_posts/*.markdown',
 					'./index.html'
 				],
-				tasks: ['jekyll'],
+				tasks: ['jekyll:dev'],
 				options: {
 					spawn: false
 				}
@@ -98,5 +113,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['sass', 'uglify', 'jekyll', 'watch']);
+	grunt.registerTask('default', ['sass', 'uglify', 'jekyll:dev', 'watch']);
 }; 
