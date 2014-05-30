@@ -3962,7 +3962,7 @@ input[type="button"].btn-block {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 90%;
-  margin-top: 0;
+  margin: 0 inherit;
 }
 
 .ua-masthead {
@@ -3987,7 +3987,7 @@ input[type="button"].btn-block {
   }
 }
 .ua-masthead.sticky {
-  background: #062430;
+  background-color: #062430;
   position: fixed;
   z-index: 3;
   top: 0;
@@ -4030,7 +4030,6 @@ input[type="button"].btn-block {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #062430;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -4052,7 +4051,8 @@ input[type="button"].btn-block {
 
 .list-nav {
   display: block;
-  line-height: 2;
+  line-height: 1.75;
+  margin: 0;
 }
 @media (max-width: 480px) {
   .list-nav {
@@ -4157,6 +4157,9 @@ input[type="button"].btn-block {
   }
 }
 
+.ua-client .container {
+  padding-top: 50px;
+}
 @media (min-width: 768px) {
   .ua-client .ua-client-list {
     margin-top: 50px;
@@ -4300,7 +4303,7 @@ input[type="button"].btn-block {
 }
 .ua-case .ua-work-background {
   width: 100%;
-  padding: 50px inherit;
+  padding: 100px inherit;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -4385,7 +4388,7 @@ input[type="button"].btn-block {
 }
 .ua-services .ua-section-heading {
   background: #f1f1f1;
-  padding: 50px inherit;
+  padding: 100px inherit;
 }
 @media (min-width: 992px) {
   .ua-services .ua-section-heading {
@@ -4412,6 +4415,9 @@ input[type="button"].btn-block {
 @media (min-width: 768px) {
   .ua-services .ua-section-expertise > .col-sm-12:first-child {
     border-bottom: 1px solid #f1f1f1;
+  }
+  .ua-services .ua-section-expertise > .col-sm-12:first-child .ua-expertise {
+    padding-top: 50px;
   }
 }
 .ua-services .ua-section-expertise .ua-expertise {
@@ -4500,15 +4506,20 @@ input[type="button"].btn-block {
 .ua-contact {
   background-image: url(../img/united-agency-contact.jpg);
   min-height: 400px;
-  padding: 10px inherit;
+  padding: 50px inherit;
 }
 @media (min-width: 768px) {
   .ua-contact {
-    padding: 62px inherit;
+    padding: 60px inherit;
   }
 }
 .ua-contact > div {
-  margin-bottom: 18px;
+  margin: 18px inherit;
+}
+@media (max-width: 480px) {
+  .ua-contact > div:last-child {
+    margin-top: 50px;
+  }
 }
 .ua-contact .ua-section-heading .ua-headline {
   color: white;
