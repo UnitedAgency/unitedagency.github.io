@@ -47,7 +47,7 @@ module.exports = function(grunt) {
 		uglify: {
 			build: {
 				files: {
-					'js/main.js' : [
+					'js/main.min.js' : [
 					'_js/lib/jquery-bootstrap.js',
 					'_js/main.js'
 					]

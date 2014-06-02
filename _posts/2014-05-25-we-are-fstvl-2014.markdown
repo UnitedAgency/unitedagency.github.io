@@ -7,6 +7,6 @@ client: We Are FSTVL
 excerpt: Facebook, iOS, Android Application & Digital Advertising
 background: ua-wearefstvl-background.jpg
 image: ua-wearefstvl-thumb.png
-logo: ua-wearefstvl-logo.png
+logo: ua-wearefstvl-logo
 css: wearefstvl
 ---

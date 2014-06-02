@@ -7,6 +7,6 @@ client: Thomas Cook
 excerpt: Facebook Application & Digital Advertising
 background: ua-usoa-background.jpg
 image: ua-usoa-thumb.png
-logo: ua-usoa-logo.png
+logo: ua-usoa-logo
 css: tc-usoa
 ---

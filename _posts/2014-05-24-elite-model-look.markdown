@@ -7,6 +7,6 @@ client: Elite Model Look
 excerpt: Facebook Application & Digital Advertising
 background: ua-elite-background.jpg
 image: ua-elite-thumb.png
-logo: ua-elite-logo.png
+logo: ua-elite-logo
 css: elite
 ---

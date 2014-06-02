@@ -3309,6 +3309,9 @@ address {
     border-right: none;
   }
 }
+.ua-client .clients[data-target="#work"] {
+  cursor: pointer;
+}
 .ua-client .clients:after {
   display: inline-block;
   content: " ";
@@ -3317,6 +3320,7 @@ address {
   background-image: url(../img/united-agency-clients.png);
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: auto 224px;
   filter: url(../img/filters.svg#grayscale);
   /* Firefox 3.5+ */
   filter: gray;
@@ -3473,6 +3477,23 @@ address {
     text-align: center;
   }
 }
+.ua-case .ua-work-summary .ua-work-logo {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  display: block;
+  min-width: 287px;
+  min-height: 60px;
+}
+.ua-case .ua-work-summary .ua-work-logo.ua-elite-logo {
+  background-image: url(../img/ua-elite-logo.png);
+}
+.ua-case .ua-work-summary .ua-work-logo.ua-wearefstvl-logo {
+  background-image: url(../img/ua-wearefstvl-logo.png);
+}
+.ua-case .ua-work-summary .ua-work-logo.ua-usoa-logo {
+  background-image: url(../img/ua-usoa-logo.png);
+}
 .ua-case .ua-work-headline {
   line-height: 1.1;
   margin-top: 10px;
@@ -3579,6 +3600,7 @@ address {
   background-image: url(../img/united-agency-expertises.png);
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: auto 210px;
   position: relative;
   margin: 26px auto 0 auto;
 }

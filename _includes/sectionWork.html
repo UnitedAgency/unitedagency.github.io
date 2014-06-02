@@ -16,8 +16,8 @@
 					<img src="{{ site.url }}/img/{{ post.image }}" alt="" class="img-responsive">
 				</div>
 				<div class="col-sm-6 ua-work-summary">
-					<div class="ua-work-logo">
-						<img src="{{ site.url }}/img/{{ post.logo }}" alt="">
+					<div class="ua-work-logo {{ post.logo }}">
+						<!-- client logo -->
 					</div>
 					<div class="h1 ua-work-headline">{{ post.title }}</div>
 					<p class="ua-section-tagline">{{ post.excerpt }}</p>
