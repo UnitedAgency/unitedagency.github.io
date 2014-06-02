@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: '_img/',
-					src: ['**/*.{png,jpg,jpeg,gif}'],
+					src: ['**/*.{png,jpg,jpeg,gif,ico}'],
 					dest: 'img/'
 				}]
 			}
@@ -32,14 +32,24 @@ module.exports = function(grunt) {
 			}
 		},
 
+		concat: {
+			dist: {
+				src: [
+					'bower_components/jquery/dist/jquery.min.js', 
+					'_sass/bootstrap-sass/javascripts/bootstrap/transition.js',
+					'_sass/bootstrap-sass/javascripts/bootstrap/modal.js',
+					'_sass/bootstrap-sass/javascripts/bootstrap/carousel.js'
+				],
+				dest: '_js/lib/jquery-bootstrap.js'
+			}
+		},
+
 		uglify: {
-			my_target: {
+			build: {
 				files: {
-					'js/main.min.js' : [
-						'bower_components/jquery/dist/jquery.min.js', 
-						'_sass/bootstrap-sass/javascripts/bootstrap/transition.js',
-						'_sass/bootstrap-sass/javascripts/bootstrap/carousel.js',
-						'_js/main.js'
+					'js/main.js' : [
+					'_js/lib/jquery-bootstrap.js',
+					'_js/main.js'
 					]
 				}
 			},
@@ -72,7 +82,7 @@ module.exports = function(grunt) {
 			},
 			scripts: {
 				files: ['_js/*.js'],
-				tasks: ['uglify'],
+				tasks: ['concat', 'uglify'],
 				options: {
 					spawn: false
 				}
@@ -109,9 +119,10 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['sass', 'uglify', 'jekyll:dev', 'watch']);
+	grunt.registerTask('default', ['sass', 'concat', 'uglify', 'watch']);
 }; 

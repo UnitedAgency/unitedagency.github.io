@@ -1,11 +1,60 @@
 <!doctype html>
-<html>
+<!--[if lt IE 9]> <html xmlns:fb="http://ogp.me/ns/fb#" class="ie8"> <![endif]--> 
+<!--[if gt IE 8]> <html xmlns:fb="http://ogp.me/ns/fb#" class="ie9"> <![endif]--> 
+<!--[if !IE]> <html xmlns:fb="http://ogp.me/ns/fb#"> <![endif]--> 
 	<head>
 		<title>{{ site.name }} &ndash; {{ site.tagline }}</title>
+
+		<!-- Metadata -->
 		<meta charset="utf-8">
+		<meta name="title" content="{{ site.name }} &ndash; {{ site.tagline }}">
+	    <meta name="description" content="{{ site.description }}">
+	    <meta name="canonical" content="{{ site.url }}">
+
+	    <!-- Search Engine Robots -->
+	    <meta name="robots" content="noodp">
+	    <meta name="googlebot" content="all, index, follow">
+	    <meta name="robots" content="all, index, follow">
+	    <meta name="msnbot" content="all, index, follow">
+
+		<!-- Mobile optimization -->
 		<meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1">
+
+	    <!-- Facebook open graph -->
+	    <meta property="fb:app_id" content="274237886074738">
+	    <meta property="og:type" content="website">	    
+	    <meta property="og:title" content="{{ site.name }} &ndash; {{ site.tagline }}">
+	    <meta property="og:url" content="{{ site.url }}">
+	    <meta property="og:description" content="{{ site.description }}">
+	    <meta property="og:image" content="{{ site.url }}/img/unitedagencyx1024.png">
+
+		<!-- Twitter card -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="theunitedagency">
+		<meta name="twitter:title" content="{{ site.name }} &ndash; {{ site.tagline }}">
+		<meta name="twitter:description" content="{{ site.description }}">
+		<meta name="twitter:url" content="{{ site.url }}">
+		<meta name="twitter:image" content="{{ site.url }}/img/unitedagencyx1024.png">
+
+		<!-- Favicon etc. -->
+		<!--[if IE]>
+			<link rel="shortcut icon" href="{{ site.url }}/img/favicon.ico">
+		<![endif]-->
+		<link rel="icon" href="{{ site.url }}/img/favicon.png">
+		<meta name="msapplication-TileColor" content="#ED3F4C">
+		<meta name="msapplication-TileImage" content="{{ site.url }}/img/unitedagencyx144.png">
+		<link rel="apple-touch-icon" href="{{ site.url }}/img/touch-icon-iphone-60x60.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/img/touch-icon-iphone-152x152.png">
+		<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/img/apple-touch-icon-152x152-precomposed.png">
+
+		<!-- CSS, Style -->
 		<link href="{{ site.url }}/css/main.min.css" rel="stylesheet">
-		<link rel="shortcut icon" href="{{ site.url }}/img/favicon.png">
+
+		<!-- HTML5 tags support for legacy IE -->
+		<!--[if lt IE 9]>
+			<script src="{{ site.url }}/js/lib/html5shiv.min.js" type="text/javascript"></script>
+			<style>html,body{zoom:1;}</style>
+		<![endif]-->
 	</head>
 	<body>
 		<div class="container-fluid clearfix">
