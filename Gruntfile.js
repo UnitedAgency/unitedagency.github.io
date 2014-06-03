@@ -77,28 +77,28 @@ module.exports = function(grunt) {
 		},
 
 		watch: {
-			options: {
-				livereload: true
-			},
 			scripts: {
 				files: ['_js/*.js'],
 				tasks: ['concat', 'uglify'],
 				options: {
-					spawn: false
+					spawn: false,
+					livereload: true
 				}
 			},
 			css: {
 				files: ['_sass/*.scss'],
 				tasks: ['sass'],
 				options: {
-					spawn: false
+					spawn: false,
+					livereload: true
 				}
 			},
 			img: {
 				files: ['_img/*.*'],
 				tasks: ['imagemin'],
 				options: {
-					spawn: false
+					spawn: false,
+					livereload: true
 				}
 			},
 			jekyll: {
@@ -110,7 +110,8 @@ module.exports = function(grunt) {
 				],
 				tasks: ['jekyll:dev'],
 				options: {
-					spawn: false
+					spawn: false,
+					livereload: true
 				}
 			}
 		}
