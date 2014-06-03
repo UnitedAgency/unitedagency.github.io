@@ -3373,7 +3373,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .list-nav {
   display: block;
-  line-height: 1.75;
   margin: 0;
 }
 @media (max-width: 768px) {
