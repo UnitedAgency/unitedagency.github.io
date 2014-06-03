@@ -3272,7 +3272,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -o-transition: position, 0.3s linear;
   transition: position, 0.3s linear;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .ua-masthead {
     top: 0;
     background-color: #062430;
@@ -3325,10 +3325,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .list-mobile-nav {
-  display: none;
   line-height: 50px;
+  display: none;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .list-mobile-nav {
     display: block;
   }
@@ -3376,7 +3376,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   line-height: 1.75;
   margin: 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .list-nav {
     display: none;
   }
