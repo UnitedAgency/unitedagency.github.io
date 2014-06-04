@@ -4227,6 +4227,7 @@ img.mfp-img {
   vertical-align: baseline;
 }
 .ua-case .ua-section-tagline {
+  font-size: 16px;
   margin-bottom: 18px;
 }
 
@@ -4451,6 +4452,7 @@ img.mfp-img {
   width: 150px;
   height: 44px;
   background-size: 100%;
+  background-position: center top;
 }
 @media (min-width: 768px) {
   .ua-contact .ua-address .ua-logo {
@@ -4472,6 +4474,13 @@ img.mfp-img {
 .ua-post {
   padding-top: 25px;
 }
+@media (max-width: 480px) {
+  .ua-post iframe {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 @media (max-width: 480px) {
   .ua-instagram-feed ul {
@@ -4485,6 +4494,18 @@ img.mfp-img {
   .ua-instagram-feed ul li:last-child {
     display: none;
   }
+}
+
+.ua-twitter-feed li {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ed3f4c;
+}
+.ua-twitter-feed li:last-child {
+  border-bottom: none;
+}
+.ua-twitter-feed li p {
+  margin-bottom: 10px;
 }
 
 /*! https://gist.github.com/jgarber/2302238 */
@@ -4519,4 +4540,7 @@ img.mfp-img {
   .flex-video {
     padding-top: 0;
   }
+}
+.mfp-content {
+  background-color: #fff;
 }

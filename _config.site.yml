@@ -4,7 +4,7 @@ description: Social Marketing Solutions
 markdown: redcarpet
 pygments: true
 
-url: http://unitedagency.github.io
+url: http://united-agency.co.uk
 baseurl: /
 
 exclude: ['bower_components', 'node_modules']

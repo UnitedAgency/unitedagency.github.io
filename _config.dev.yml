@@ -1,7 +1,10 @@
 name: United Agency
 tagline: Social Marketing Solutions
+description: Social Marketing Solutions
 markdown: redcarpet
 pygments: true
 
 url: http://127.0.0.1:4000
 baseurl: /
+
+exclude: ['bower_components', 'node_modules']
