@@ -4481,6 +4481,11 @@ img.mfp-img {
 .ua-instagram-feed ul li {
   margin-bottom: 10px;
 }
+@media (max-width: 480px) {
+  .ua-instagram-feed ul li:last-child {
+    display: none;
+  }
+}
 
 /*! https://gist.github.com/jgarber/2302238 */
 .flex-video {
