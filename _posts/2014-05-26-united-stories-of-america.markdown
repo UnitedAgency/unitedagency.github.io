@@ -11,7 +11,9 @@ logo: ua-usoa-logo
 css: tc-usoa
 ---
 
-<iframe src="//player.vimeo.com/video/97216608" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div class="flex-video vimeo" >
+	<iframe src="//player.vimeo.com/video/97216608" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
 
 ===
 

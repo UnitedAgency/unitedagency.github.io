@@ -10,8 +10,9 @@ image: ua-wearefstvl-thumb.png
 logo: ua-wearefstvl-logo
 css: wearefstvl
 ---
-
-<iframe src="//player.vimeo.com/video/97313554" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div class="flex-video vimeo" >
+	<iframe src="//player.vimeo.com/video/97313554" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
 
 ===
 
