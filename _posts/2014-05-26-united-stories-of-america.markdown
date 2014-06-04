@@ -12,7 +12,7 @@ css: tc-usoa
 ---
 
 <div class="flex-video vimeo" >
-	<iframe src="//player.vimeo.com/video/97216608?title=0&amp;byline=0&amp;portrait=0&amp;color=ed3f4c" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	<iframe src="//player.vimeo.com/video/97216608?title=0&amp;byline=0&amp;portrait=0&amp;color=ed3f4c&amp;autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
 ===
