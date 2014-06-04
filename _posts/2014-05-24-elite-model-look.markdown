@@ -10,3 +10,9 @@ image: ua-elite-thumb.png
 logo: ua-elite-logo
 css: elite
 ---
+
+<iframe src="//player.vimeo.com/video/97216609" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+===
+
+We created a digital and social media strategy to support the 30th year of the Elite Model Look in the UK. We harnessed the power of the selfie and Instagram to drive more entries to the model contest than ever before in the UK market, and grew all of their social media channels, raising awareness of the model search to a much larger audience.

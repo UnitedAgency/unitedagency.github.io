@@ -35,25 +35,23 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
-					'bower_components/jquery/dist/jquery.min.js', 
 					'_sass/bootstrap-sass/javascripts/bootstrap/transition.js',
 					'_sass/bootstrap-sass/javascripts/bootstrap/modal.js',
 					'_sass/bootstrap-sass/javascripts/bootstrap/carousel.js'
 				],
-				dest: '_js/lib/jquery-bootstrap.js'
+				dest: '_js/bootstrap-custom.js'
 			}
 		},
 
 		uglify: {
 			build: {
 				files: {
-					'js/main.min.js' : [
-					'_js/lib/jquery-bootstrap.js',
-					'_js/main.js'
-					]
+					'js/main.min.js' : ['_js/main.js'],
+					'js/lib/bootstrap-custom.min.js' : ['_js/bootstrap-custom.js']
 				}
 			},
 			options: {
+				mangle: false,
 				preserveComments: 'some'
 			}
 		},
@@ -78,8 +76,8 @@ module.exports = function(grunt) {
 
 		watch: {
 			scripts: {
-				files: ['_js/*.js'],
-				tasks: ['concat', 'uglify'],
+				files: ['_js/main.js'],
+				tasks: ['uglify'],
 				options: {
 					spawn: false,
 					livereload: true
