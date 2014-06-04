@@ -4473,8 +4473,13 @@ img.mfp-img {
   padding-top: 25px;
 }
 
-.ua-instagram-feed > div {
-  margin: 5px;
+@media (max-width: 480px) {
+  .ua-instagram-feed ul {
+    text-align: center;
+  }
+}
+.ua-instagram-feed ul li {
+  margin-bottom: 10px;
 }
 
 /*! https://gist.github.com/jgarber/2302238 */
