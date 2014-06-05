@@ -1,7 +1,5 @@
 <!doctype html>
-<!--[if lt IE 9]> <html xmlns:fb="http://ogp.me/ns/fb#" class="ie8"> <![endif]--> 
-<!--[if gt IE 8]> <html xmlns:fb="http://ogp.me/ns/fb#" class="ie9"> <![endif]--> 
-<!--[if !IE]> <html xmlns:fb="http://ogp.me/ns/fb#"> <![endif]--> 
+<html xmlns:fb="http://ogp.me/ns/fb#">
 	<head>
 		<title>{{ site.name }} &ndash; {{ site.tagline }}</title>
 
@@ -50,5 +48,9 @@
 		<!-- CSS, Style -->
 		<link href="{{ site.url }}/css/main.min.css" rel="stylesheet">
 	</head>
-	<body>
+	<!--[if lt IE 8]> <body class="ie-legacy"> <![endif]--> 
+	<!--[if IE 8]> <body class="ie8"> <![endif]--> 
+	<!--[if IE 9]> <body class="ie9"> <![endif]--> 
+	<!--[if gt IE 9]> <body class="ie10 ie11"> <![endif]--> 
+	<!--[if !IE]> <body> <![endif]--> 
 		<div class="container-fluid clearfix">
