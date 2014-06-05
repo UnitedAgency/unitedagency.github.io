@@ -4298,7 +4298,7 @@ img.mfp-img {
   background: #f1f1f1;
   padding: 50px inherit;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .ua-services .ua-section-heading {
     display: table-cell;
     vertical-align: middle;
@@ -4309,7 +4309,7 @@ img.mfp-img {
   margin-top: 0;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .ua-section-expertise {
     display: table-cell;
     float: none;
@@ -4388,6 +4388,11 @@ img.mfp-img {
 }
 .ua-section-expertise .ua-expertise .media-body h3 {
   margin-top: 10px;
+}
+@media (min-width: 1200px) and (max-width: 1280px) {
+  .ua-section-expertise .ua-expertise .media-body h3 {
+    font-size: 16px;
+  }
 }
 @media (min-width: 480px) {
   .ua-section-expertise .ua-expertise .media-body p {
@@ -4490,9 +4495,26 @@ img.mfp-img {
 .ua-instagram-feed ul li {
   margin-bottom: 10px;
 }
-@media (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 992px), (device-width: 768px) and (orientation: landscape) {
   .ua-instagram-feed ul li:last-child {
     display: none;
+  }
+}
+@media (max-width: 480px) and (orientation: portrait) {
+  .ua-instagram-feed ul li:last-child {
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) {
+  .ua-instagram-feed {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .ua-instagram-feed {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
