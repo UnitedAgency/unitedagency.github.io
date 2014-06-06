@@ -1,4 +1,10 @@
 @import url("//fonts.googleapis.com/css?family=Muli:300|Raleway:900,500");
+/*!
+ *
+ * Website global styles | (c) United Agency 2014 | author: Jabran Rafique
+ * Includes: Google Web Fonts, Twitter Bootstrap, Animate.css, IcoMoon and Magnific Popup
+ *
+ */
 /* #646464; */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -3237,6 +3243,171 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: fadeInUp;
 }
 
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+.fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+}
+
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+}
+
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+@-webkit-keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+}
+
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+}
+
+.fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+}
+
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
 /* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
@@ -3696,9 +3867,14 @@ img.mfp-img {
 }
 
 /*! 
- *
- * 2014 Copyright United Agency | jabran@united-agency.co.uk | 1.0.0 
+ * ==================
+ *    United CSS 
+ * ==================
  */
+.masthead-wrapper h1 {
+  margin: 0;
+}
+
 .ua-logo {
   display: block;
   width: 205px;
@@ -3824,6 +4000,7 @@ img.mfp-img {
 .list-nav {
   display: block;
   margin: 0;
+  line-height: 50px;
 }
 @media (max-width: 768px) {
   .list-nav {
@@ -3834,8 +4011,8 @@ img.mfp-img {
   display: inline-block;
   content: "\2022";
   color: #ed3f4c;
-  font-size: 2em;
-  top: 5px;
+  font-size: 1.5em;
+  top: 3px;
   position: relative;
   margin-right: 5px;
 }
@@ -4172,7 +4349,8 @@ img.mfp-img {
 }
 .ua-case .ua-work-background {
   width: 100%;
-  padding: 100px inherit;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -4395,7 +4573,7 @@ img.mfp-img {
   }
 }
 @media (min-width: 480px) {
-  .ua-section-expertise .ua-expertise .media-body p {
+  .ua-section-expertise .ua-expertise .media-body .ua-section-tagline {
     font-size: 18px;
   }
 }
@@ -4565,4 +4743,94 @@ img.mfp-img {
 }
 .mfp-content {
   background-color: #fff;
+}
+
+/*! IE8 fixes */
+.ie8 .ua-logo {
+  background-image: url(../img/united-agency-logo-ie.png);
+}
+.ie8 .ua-contact .ua-logo {
+  background-image: url(../img/united-agency-logo-contact-ie.png);
+}
+.ie8 .clients {
+  display: inline-block;
+  width: 263px;
+  height: 112px;
+  background-image: url(../img/united-agency-clients-ie.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: auto 224px;
+  filter: gray;
+  filter: alpha(opacity=40);
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.ie8 .clients:after {
+  background: none;
+}
+.ie8 .clients:hover, .ie8 .clients:focus, .ie8 .clients.hover {
+  filter: alpha(opacity=100);
+  filter: none;
+}
+.ie8 .clients.client-thomas-cook {
+  background-position: 0 0;
+}
+.ie8 .clients.client-we-are-fstvl {
+  background-position: -263px 0;
+}
+.ie8 .clients.client-above-beyond {
+  background-position: -526px 0;
+}
+.ie8 .clients.client-dorothy-perkins {
+  background-position: -789px 0;
+}
+.ie8 .clients.client-lord-of-dance {
+  background-position: 0 -112px;
+}
+.ie8 .clients.client-elite-model-look {
+  background-position: -263px -112px;
+}
+.ie8 .clients.client-hobbs {
+  background-position: -526px -112px;
+}
+.ie8 .clients.client-dennis {
+  background-position: -789px -112px;
+}
+.ie8 .ua-section-expertise .ua-expertise .media-object {
+  display: block;
+  width: 105px;
+  height: 105px;
+  background-image: url(../img/united-agency-expertises-ie.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: relative;
+  margin: 26px auto 0 auto;
+}
+.ie8 .ua-section-expertise .ua-expertise .media-object:before {
+  background: none;
+}
+.ie8 .ua-section-expertise .ua-expertise .community-engagement .media-object {
+  background-position: 0 0;
+}
+.ie8 .ua-section-expertise .ua-expertise .development-content .media-object {
+  background-position: -105px 0;
+}
+.ie8 .ua-section-expertise .ua-expertise .advocacy .media-object {
+  background-position: -210px 0;
+}
+.ie8 .ua-section-expertise .ua-expertise .partnerships .media-object {
+  background-position: 0 -105px;
+}
+.ie8 .ua-section-expertise .ua-expertise .digital-advertising .media-object {
+  background-position: -105px -105px;
+}
+.ie8 .ua-section-expertise .ua-expertise .listening-analytics-reporting .media-object {
+  background-position: -210px -105px;
+}
+.ie8 .ua-case .ua-work-background .ua-work-thumb {
+  float: left;
+}
+.ie8 .ua-case .ua-work-background .ua-work-summary {
+  float: right;
 }
