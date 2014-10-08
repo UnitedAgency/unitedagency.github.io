@@ -4746,6 +4746,10 @@ img.mfp-img {
 }
 
 /*! IE8 fixes */
+.ie8 .ua-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .ie8 .ua-logo {
   background-image: url(../img/united-agency-logo-ie.png);
 }
@@ -4797,6 +4801,34 @@ img.mfp-img {
 .ie8 .clients.client-dennis {
   background-position: -789px -112px;
 }
+.ie8 .ua-work-logo.ua-elite-logo {
+  background-image: url(../img/ua-elite-logo-ie.png) !important;
+}
+.ie8 .ua-work-logo.ua-wearefstvl-logo {
+  background-image: url(../img/ua-wearefstvl-logo-ie.png) !important;
+}
+.ie8 .ua-work-logo.ua-usoa-logo {
+  background-image: url(../img/ua-usoa-logo-ie.png) !important;
+}
+.ie8 .ua-section-expertise:before, .ie8 .ua-section-expertise:after {
+  content: " ";
+  display: table;
+}
+.ie8 .ua-section-expertise:after {
+  clear: both;
+}
+.ie8 .ua-section-expertise > .col-sm-12:before, .ie8 .ua-section-expertise > .col-sm-12:after {
+  content: " ";
+  display: table;
+}
+.ie8 .ua-section-expertise > .col-sm-12:after {
+  clear: both;
+}
+.ie8 .ua-section-expertise .ua-expertise {
+  float: left;
+  max-width: 400px;
+  min-height: 400px;
+}
 .ie8 .ua-section-expertise .ua-expertise .media-object {
   display: block;
   width: 105px;
@@ -4828,9 +4860,30 @@ img.mfp-img {
 .ie8 .ua-section-expertise .ua-expertise .listening-analytics-reporting .media-object {
   background-position: -210px -105px;
 }
+.ie8 .ua-case .ua-work-background:before, .ie8 .ua-case .ua-work-background:after {
+  content: " ";
+  display: table;
+}
+.ie8 .ua-case .ua-work-background:after {
+  clear: both;
+}
 .ie8 .ua-case .ua-work-background .ua-work-thumb {
   float: left;
+  max-width: 768px;
 }
 .ie8 .ua-case .ua-work-background .ua-work-summary {
   float: right;
+}
+.ie8 .ua-contact:before, .ie8 .ua-contact:after {
+  content: " ";
+  display: table;
+}
+.ie8 .ua-contact:after {
+  clear: both;
+}
+.ie8 .ua-contact .ua-instagram-feed,
+.ie8 .ua-contact .ua-twitter-feed,
+.ie8 .ua-contact .ua-address {
+  max-width: 400px;
+  float: left;
 }
